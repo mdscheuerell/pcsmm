@@ -19,18 +19,52 @@ class: center, middle
 ## Mark Scheuerell
 _U.S. Geological Survey<br>Washington Cooperative Fish and Wildlife Research Unit<br>School of Aquatic and Fishery Sciences<br>University of Washington<br>Seattle, WA_
 
-.futnote.purple-text[scheuerl@uw.edu]
+.futnote.purple-text[`r icons::fontawesome("envelope")` scheuerl@uw.edu]
 
-.citation.blue-text[@mark_scheuerell]
+.citation.blue-text[`r icons::fontawesome("twitter")` @mark_scheuerell]
 
 ---
 
 # Acknowledgments
 
-### .blue-text[ Casey Ruff, Eric Beamer ] (Skagit River System Cooperative)
+### .blue-text[ Casey Ruff & Eric Beamer ] (Skagit River System Cooperative)
 
 ### .blue-text[ Joe Anderson ] (WDFW)
 
+
+---
+
+class: inverse, center, middle
+
+# RECOVERY OPTIONS FOR STEELHEAD?
+
+---
+
+class: middle, center
+
+# .orange-text[Life-cycle models] are used extensively to predict effects of recovery actions
+
+---
+
+# Common approach
+
+## .right.blue-text[Pre-process raw data based upon chosen model]
+
+---
+
+# .gray-text[~~Common~~] Approach
+
+## .right.gray-text[~~Pre-process raw data based upon chosen model~~]
+
+## .right.blue-text[Choose model based upon raw data]
+
+### .right[Maunder & Punt (2013) _Fish Res_]
+
+---
+
+class: inverse, center, middle
+
+# INTEGRATED POPULATION MODELS
 
 ---
 
@@ -311,40 +345,6 @@ background-size: cover
 
 ---
 
-class: inverse, center, middle
-
-# RECOVERY OPTIONS FOR SALMON?
-
----
-
-class: middle, center
-
-# .orange-text[Life-cycle models] are used extensively to predict effects of recovery actions
-
----
-
-# Common approach
-
-## .right.blue-text[Pre-process raw data based upon chosen model]
-
----
-
-# .gray-text[~~Common~~] Approach
-
-## .right.gray-text[~~Pre-process raw data based upon chosen model~~]
-
-## .right.blue-text[Choose model based upon raw data]
-
-### .right[Maunder & Punt (2013) _Fish Res_]
-
----
-
-class: inverse, center, middle
-
-# INTEGRATED POPULATION MODELS
-
----
-
 class: black-back
 background-image: url(figs/skagit.png)
 background-position: 50% 50%
@@ -397,6 +397,15 @@ background-size: cover
 ---
 
 class: frimg, center
+background-image: url(figs/model_forms.png)
+background-position: 50% 50%
+background-size: 95%
+
+# Possible spawner-recruit relationships
+
+---
+
+class: frimg, center
 background-image: url(figs/flow_effects.png)
 background-position: 50% 70%
 background-size: 80%
@@ -415,15 +424,6 @@ background-size: 85%
 # Hatchery effect on productivity
 
 .citationT.gray-text[Scheuerell et al. (2021)]
-
----
-
-class: frimg, center
-background-image: url(figs/BH_form.png)
-background-position: 50% 75%
-background-size: 80%
-
-# Theoretical parent-offspring relationship
 
 ---
 
