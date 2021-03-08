@@ -64,13 +64,15 @@ class: middle, center
 
 class: inverse, center, middle
 
-# INTEGRATED POPULATION MODELS
+# INTEGRATED POPULATION MODEL
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
-# Lots of focus on *hierarchical models*
+# A hierarchical framework  
+# that allows for the joint modeling  
+# of different data types
 
 ---
 
@@ -80,41 +82,9 @@ background-size: cover
 
 ---
 
-# Hi·er·ar·chi·cal
-
-### *adjective*
-
-1. ## Arranged in an order
-
----
-
 class: center, middle, inverse
 
-# A hierarchical model is simply
-# a model within a model
-
----
-
-# Hierarchical models also masquerade as
-
-.green-text[
-## Nested data models
-]
-.blue-text[
-## Mixed models
-]
-.orange-text[
-## Random-effects models
-]
-.purple-text[
-## State-space models
-]
-
----
-
-class: center, middle, inverse
-
-# A state-space model has 2 parts
+# IPMs have 2 general parts
 
 ---
 
@@ -259,7 +229,7 @@ class: inverse, center, middle
 
 ---
 
-# Advantages of hierarchical models
+# Advantages
 
 ## 1. Can combine many different .purple-text[data types]
 
@@ -273,7 +243,7 @@ class: inverse, center, middle
 
 ---
 
-# Advantages of hierarchical models
+# Advantages
 
 ## 2. .gray-text[Missing data] are easily accommodated
 
@@ -322,7 +292,7 @@ background-image: url(figs/Jonsen2016.png)
 background-position: 50% 60%
 background-size: 70%
 
-# Advantages of hierarchical models
+# Advantages
 
 ## 3. Improved accuracy & precision
 
@@ -333,7 +303,7 @@ background-image: url(figs/robin.jpg)
 background-position: 50% 80%
 background-size: 40%
 
-# Advantages of hierarchical models
+# Advantages
 
 ## 4. .gray-text[Data-poor] benefit from .green-text[data-rich]
 
@@ -348,37 +318,61 @@ background-size: cover
 class: black-back
 background-image: url(figs/skagit.png)
 background-position: 50% 50%
-background-size: cover
+background-size: 90%
 
 # Skagit River
 
 ---
 
-# Characterize uncertainty between steelhead
+# Characterize uncertainty between
 
-## .blue-text[1) spawners and offspring]
+## .blue-text[1) spawners and recruits]
 
 ## .green-text[2) productivity and environmental conditions]
 
 ---
 
-# Skagit River steelhead
+# Skagit River steelhead data
 
-.right.blue-text[
-## Escapement, harvest & age data from 1978-2018
+.right.purple-text[
+## Escapement, harvest & age composition
 ]
+
+---
+
+# Skagit River steelhead data
+
+.right.purple-text[
+## Escapement, harvest & age composition
+]
+
+<br>
+
+# Environmental data
 
 .right.green-text[
-## Effects of streamflows & hatchery releases
+## Hatchery releases, flows, ocean conditions
 ]
 
 ---
 
-# Integrated population model
+# Skagit River steelhead data
 
-## .blue-text.under[State model]
+.right.purple-text[
+## Escapement, harvest & age composition
+]
 
-## .blue-text[Offspring] = f(.blue-text[Spawners], .green-text[Streamflows], .orange-text[Hatchery fish])
+<br>
+
+# Environmental data
+
+.right.green-text[
+## Hatchery releases, flows, ocean conditions
+]
+
+<br>
+
+# .right[1978-2018]
 
 ---
 
@@ -386,13 +380,21 @@ background-size: cover
 
 ## .blue-text.under[State model]
 
-## .blue-text[Offspring] = f(.blue-text[Spawners], .green-text[Streamflows], .orange-text[Hatchery fish])
+## .blue-text[Recruits] = f(.blue-text[Spawners], .orange-text[Hatchery fish], .green-text[Flows, Ocean])
+
+---
+
+# Integrated population model
+
+## .blue-text.under[State model]
+
+## .blue-text[Recruits] = f(.blue-text[Spawners], .orange-text[Hatchery fish], .green-text[Flows, Ocean])
 
 ## .purple-text.under[Observation models]
 
-## .purple-text[Spawners] = g(.blue-text[Spawners], .gray-text[Harvest])
+## .purple-text[Spawners] = g(.blue-text[Spawners], .purple-text[Harvest])
 
-## .purple-text[Ages] = h(.blue-text[Offspring])
+## .purple-text[Ages] = h(.blue-text[Recruits])
 
 ---
 
@@ -406,11 +408,11 @@ background-size: 95%
 ---
 
 class: frimg, center
-background-image: url(figs/flow_effects.png)
-background-position: 50% 70%
-background-size: 80%
+background-image: url(figs/SR_relationship.png)
+background-position: 50% 65%
+background-size: 85%
 
-# Flow effects on productivity
+# Real parent-offspring relationship
 
 .citationT.gray-text[Scheuerell et al. (2021)]
 
@@ -428,11 +430,33 @@ background-size: 85%
 ---
 
 class: frimg, center
-background-image: url(figs/SR_relationship.png)
-background-position: 50% 65%
+background-image: url(figs/flow_effects.png)
+background-position: 50% 70%
+background-size: 80%
+
+# Flow effects on productivity
+
+.citationT.gray-text[Scheuerell et al. (2021)]
+
+---
+
+class: frimg, center
+background-image: url(figs/npgo_effects.png)
+background-position: 50% 45%
+background-size: 80%
+
+# NPGO effect on productivity
+
+.citationT.gray-text[Scheuerell et al. (2021)]
+
+---
+
+class: frimg, center
+background-image: url(figs/catch_esc.png)
+background-position: 50% 50%
 background-size: 85%
 
-# Real parent-offspring relationship
+# Catch + escapement over time
 
 .citationT.gray-text[Scheuerell et al. (2021)]
 
